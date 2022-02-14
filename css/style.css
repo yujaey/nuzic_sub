@@ -1,0 +1,291 @@
+*{margin:0;padding:0;}/*여백초기화*/
+a{text-decoration: none; color: #000;}/*밑줄,글자색바꾸기*/
+ul{list-style: none;}/*블릿없애기*/
+@font-face {
+	font-family: 'GongGothicLight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicBold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: 'GongGothicMedium';
+	font-size:14px;
+	color:rgb(31, 31, 31);
+	line-height:28px;
+	min-width: 1320px;
+}
+#background{
+	height: 5320px;
+	background: #ebdbd1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ebdbd1 0%, #9dc8df 35%, #a2c3e9 65%, #9e97cb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebdbd1', endColorstr='#9e97cb',GradientType=0 ); /* IE6-9 */
+}
+#header{
+	margin: 0 auto;
+	width: 1320px;
+	height: 120px;
+	position: relative;
+}
+#util{
+	padding-top: 15px;
+	float: right;
+	font-family: 'GongGothicLight';
+}
+#util li{
+	font-size: 12px;
+	float: left;
+}
+#util li a{
+	color: #9e97cb;
+}
+#util li:nth-child(1){
+	padding-right: 40px;
+}
+h1{
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+#gnb{
+	position: absolute;
+	top: 80px;
+	left: 95px;
+	width: 1170px;
+	text-align: center;
+}
+#gnb li{
+	display: block;
+ 	float: left;
+	font-family: 'GongGothicBold';
+	width: 225px;
+}
+#gnb li:nth-child(3){
+	padding-left: 45px;
+}
+#gnb li a{
+	font-size: 14px;
+	color: rgb(82, 80, 80);
+	padding-bottom: 20px;
+}
+#gnb li a:hover{
+	color: #4522e0;
+}
+#slide{
+	width: 1320px;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+#slide img{
+	position: absolute;
+	width: 100%;
+}
+.main_text{
+	position: absolute;
+	top: 300px;
+	left: 1000px;
+	color: white;
+	line-height: 34px;
+	font-size: 24px;
+	font-family: 'GongGothicLight';
+}
+.banner_button{
+	position: absolute;
+	top: 410px;
+	left: 1000px;
+	border: 1px solid white;
+	border-radius: 30px;
+	padding: 5px 15px;
+	font-size: 14px;
+}
+.banner_button a{
+	font-family: 'GongGothicLight';
+	color: white;
+}
+#contents{
+	width: 1320px;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+#playlist_wrap{
+	height: 350px;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+.textbox{
+	float: left;
+	margin-top: 100px;
+	padding-left: 80px;
+}
+#playlist{
+	padding: 22px 0;
+	float: right;
+	width: 850px;
+}
+#playlist li{
+	width: 237px;
+	height: 306px;
+	float: left;
+	margin: 0 20.6px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+.small_title{
+	font-size: 20px;
+	padding-bottom: 12px;
+}
+span{
+	font-weight: bold;
+}
+.info{
+	color: rgb(97, 97, 97);
+	line-height: 22px;
+	padding-bottom: 10px;
+}
+#membership_wrap{
+	height: 350px;
+	padding-bottom: 150px;
+}
+.photobox{
+	float: left;
+	width: 900px;
+	height: 320px;
+	padding-top: 55px;
+	background-image: url(../images/main_membership.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#membership li{
+	float: left;
+	text-align: center;
+	padding: 0 20px;
+	color: white;
+	font-family: 'GongGothicMedium';
+	font-size: 15px;
+}
+#membership_wrap .textbox{
+	float: right;
+	text-align: right;
+}
+#shop{
+	width: 1320px;
+	height: 500px;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.5);
+	margin-top: 150px;
+}
+.shop_text{
+	float: left;
+	margin-top: 70px;
+	padding-left: 80px;
+	width: 350px;
+}
+.shop_slide{
+	width: 800px;
+	float: left;
+	padding-top: 30px;
+}
+#taste{
+	margin: 150px auto;
+	height: 500px;
+	background-image: url(../images/main_nuzician.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#taste .textbox{
+	padding-top: 80px;
+}
+#nuzician{
+	height: 500px;
+	background-image: url(../images/main_nuzician2.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+#nuzician .textbox{
+	padding-left: 1050px;
+	text-align: right;
+	padding-top: 80px;
+}
+#customers{
+	margin: 150px auto;
+	text-align: center;
+	height: 400px;
+}
+.cs_title{
+	font-size: 20px;
+}
+.cs_info{
+	color: rgb(54, 54, 54);
+	padding-bottom: 50px;
+}
+#download{
+	height: 300px;
+	background-image: url(../images/main_download.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	margin-bottom: 150px;
+}
+.appstore{
+	position: absolute;
+	top: 170px;
+	left: 535px;
+}
+.googleplay{
+	position: absolute;
+	top: 170px;
+	left: 765px;
+}
+#footer{
+	width: 1320px;
+	height: 200px;
+	margin: 0 auto;
+	color: white;
+	font-size: 12px;
+	position: relative;
+}
+.footer_logo{
+	float: left;
+	padding-right: 40px;
+	padding-top: 10px;
+}
+#footer_text li{
+	float: left;
+	padding-right: 60px;
+}
+#footer_text li a{
+	color: white;
+}
+#footer_text li a:hover{
+	font-weight: bold;
+}
+.footer_text2{
+	padding-top: 5px;
+}
+#sns{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#sns li{
+	float: left;
+	padding-right: 20px;
+}
+#sns li:hover{
+	opacity: 0.5;
+}

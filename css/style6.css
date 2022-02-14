@@ -1,0 +1,313 @@
+*{margin:0;padding:0;}/*여백초기화*/
+a{text-decoration: none; color: #000;}/*밑줄,글자색바꾸기*/
+ul{list-style: none;}/*블릿없애기*/
+@font-face {
+	font-family: 'GongGothicLight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicBold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: 'GongGothicMedium';
+	font-size:14px;
+	color:rgb(31, 31, 31);
+	line-height:28px;
+	min-width: 1320px;
+
+}
+#background{
+	height: 2620px;
+	background: #ebdbd1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ebdbd1 0%, #9dc8df 35%, #a2c3e9 65%, #9e97cb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebdbd1', endColorstr='#9e97cb',GradientType=0 ); /* IE6-9 */
+}
+#header{
+	margin: 0 auto;
+	width: 1320px;
+	height: 120px;
+	position: relative;
+}
+#util{
+	padding-top: 15px;
+	float: right;
+	font-family: 'GongGothicLight';
+}
+#util li{
+	font-size: 12px;
+	float: left;
+}
+#util li a{
+	color: #9e97cb;
+}
+#util li:nth-child(1){
+	padding-right: 40px;
+}
+h1{
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+#gnb{
+	position: absolute;
+	top: 80px;
+	left: 95px;
+	width: 1170px;
+	text-align: center;
+}
+#gnb li{
+	display: block;
+ 	float: left;
+	font-family: 'GongGothicBold';
+	width: 225px;
+}
+#gnb li:nth-child(3){
+	padding-left: 45px;
+}
+#gnb li a{
+	font-size: 14px;
+	color: rgb(82, 80, 80);
+	padding-bottom: 20px;
+}
+#gnb li a:hover{
+	color: #4522e0;
+}
+#banner{
+  width: 1320px;
+  height:500px;
+  margin: 0 auto;
+  background-image: url(../images/support/support_banner.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+#search{
+  position: absolute;
+  top: 330px;
+  left: 660px;
+ 
+}
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  font-size: 15px;
+}
+
+.form-control {
+  width: 0;
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  margin: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 38px;
+  right: 18px;
+  border: none;
+  box-shadow: none;
+  font-size: 22px;
+  color: #000;
+  letter-spacing: 1px;
+}
+.form-control:focus {
+  outline: none;
+  border: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+.form-control:focus + .label-wrap {
+  opacity: 0;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.icon-wrap {
+  border-radius: 50%;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background: #fff;
+}
+
+svg {
+  position: absolute;
+  left: 20px;
+}
+
+.form-group {
+  margin: 0;
+  position: relative;
+}
+
+.label-wrap {
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  width: 100%;
+  height: 36px;
+  z-index: 4;
+  pointer-events: none;
+}
+
+label {
+  position: absolute !important;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  right: 18px;
+  z-index: 10;
+  font-size: 22px;
+  margin: 0;
+  width: 0;
+  overflow: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+.github {
+  width: 40px;
+  height: 40px;
+  background: url(http://alikinvv.github.io/github.svg) no-repeat center;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  -webkit-animation: github 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s infinite;
+          animation: github 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s infinite;
+}
+
+@-webkit-keyframes github {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes github {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+#category_wrap{
+  width: 1320px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-family: 'GongGothicLight';
+}
+#category{
+  width: 100%;
+  text-align: center;
+}
+#category li{
+  width: 25%;
+  float: left;
+}
+#category li a{
+  color: white;
+  font-size: 18px;
+}
+#category li a:hover{
+  color: rgb(97, 86, 121);
+}
+#ask_box{
+  width: 1320px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.ask_text{
+  padding-top: 100px;
+  font-family: 'GongGothicLight';
+  font-size: 22px;
+  color: #555353;
+  line-height: 34px;
+}
+.ask_button{
+  padding: 30px;
+}
+
+
+#footer{
+  font-family: 'GongGothicLight';
+  width: 1320px;
+  margin: 0 auto;
+	height: 200px;
+	color: white;
+	font-size: 12px;
+	position: relative;
+	margin-top: 150px;
+}
+.footer_logo{
+	float: left;
+	padding-right: 40px;
+	padding-top: 10px;
+}
+#footer_text li{
+	float: left;
+	padding-right: 60px;
+}
+#footer_text li a{
+	color: white;
+}
+#footer_text li a:hover{
+	font-weight: bold;
+}
+.footer_text2{
+	padding-top: 5px;
+}
+#sns{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#sns li{
+	float: left;
+	padding-right: 20px;
+}
+#sns li:hover{
+	opacity: 0.5;
+}

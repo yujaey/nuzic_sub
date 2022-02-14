@@ -1,0 +1,351 @@
+*{margin:0;padding:0;}/*여백초기화*/
+a{text-decoration: none; color: #000;}/*밑줄,글자색바꾸기*/
+ul{list-style: none;}/*블릿없애기*/
+@font-face {
+	font-family: 'GongGothicLight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicBold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: 'GongGothicMedium';
+	font-size:14px;
+	color:rgb(31, 31, 31);
+	line-height:28px;
+	min-width: 1320px;
+}
+#background{
+	height: 4620px;
+	background: #ebdbd1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ebdbd1 0%, #9dc8df 35%, #a2c3e9 65%, #9e97cb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebdbd1', endColorstr='#9e97cb',GradientType=0 ); /* IE6-9 */
+}
+#header{
+	margin: 0 auto;
+	width: 1320px;
+	height: 120px;
+	position: relative;
+}
+#util{
+	padding-top: 15px;
+	float: right;
+	font-family: 'GongGothicLight';
+}
+#util li{
+	font-size: 12px;
+	float: left;
+}
+#util li a{
+	color: #9e97cb;
+}
+#util li:nth-child(1){
+	padding-right: 40px;
+}
+h1{
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+#gnb{
+	position: absolute;
+	top: 80px;
+	left: 95px;
+	width: 1170px;
+	text-align: center;
+}
+#gnb li{
+	display: block;
+ 	float: left;
+	font-family: 'GongGothicBold';
+	width: 225px;
+}
+#gnb li:nth-child(3){
+	padding-left: 45px;
+}
+#gnb li a{
+	font-size: 14px;
+	color: rgb(82, 80, 80);
+	padding-bottom: 20px;
+}
+#gnb li a:hover{
+	color: #4522e0;
+}
+#product{
+  width: 1320px;
+  height: 700px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+#thumnails{
+  width:511px;
+  height:635px;
+  float: left;
+  margin-left: 50px;
+}
+.thumnailslist{
+  width:511px;
+  height:511px;
+  position:relative;
+  overflow:hidden;
+}
+.thumnailslist img{
+  position:absolute;
+  left:0px;
+  top:0;
+}
+.sthumnail{
+  width: 511px;
+  padding-top: 22px;
+}
+#button1 img{
+  width: 20%;
+  height: 20%;
+  float: left;
+  padding: 0 22px 0 70px;
+}
+#button2 img{
+  width: 20%;
+  height: 20%;
+  float: left;
+  padding-right: 22px;
+}
+#button3 img{
+  width: 20%;
+  height: 20%;
+  float: left;
+}
+#textbox{
+  float: left;
+  padding:160px 0 100px 120px;
+  letter-spacing :0.6px;
+}
+.product_name{
+  font-family: 'GongGothicBold';
+  font-size: 36px;
+  color: rgb(74,103,204);
+  padding-bottom: 30px;
+}
+.product_info{
+  font-size: 16px;
+  color: #474747;
+  padding-bottom: 30px;
+  line-height: 36px;
+}
+span{
+  font-weight: bold;
+  padding-right: 10px;
+}
+.selectbox{
+  height: 120px;
+  border-top: 1px solid rgb(236, 236, 236);
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+.option1{
+  float: left;
+  height: 40px;
+  padding-top: 10px;
+}
+.option1_type{
+  float: left;
+  padding-right: 50px;
+  padding-top: 8px;
+}
+.option1_box{
+  float: left;
+}
+.option2{
+  float: left;
+  height: 40px;
+  padding-top: 20px;
+}
+.option2_type{
+  float: left;
+  padding-right: 38px;
+  padding-top: 8px;
+}
+.option2_box{
+  float: left;
+}
+select{
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+  font-family: inherit;
+  border: 1px solid rgb(92, 92, 92);
+  background-color: white;
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  color: #333333;
+}
+#product_button{
+  padding-top: 30px;
+  text-align: center;
+}
+#product_button li{
+  float: left;
+}
+#product_button li a:hover{
+  background-color: rgb(106,127,200);
+  color: white;
+}
+#product_button li a{
+  color: rgb(106,127,200);
+  font-size: 10px;
+  font-family: 'GongGothicBold';
+  display: block;
+  border: 1px solid rgb(106,127,200);
+  border-radius: 30px;
+  padding: 10px;
+}
+#product_button li:nth-child(2){
+  margin: 0 10px;
+}
+#product_specific{
+  width: 1320px;
+  height: 2500px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.notice{
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 100px;
+}
+.product_1{
+  height: 561px;
+  padding-bottom: 150px;
+}
+.product_text{
+  float: left;
+  text-align: right;
+  padding-top: 150px;
+  font-size: 19px;
+  margin-left: 225px;
+  line-height: 36px;
+}
+.info_text{
+  padding-top: 60px;
+}
+.material{
+  padding-top: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #807dcd;
+}
+.product_photo{
+  float: left;
+  padding-left: 100px;
+}
+.product_2{
+  height:561px ;
+  margin-bottom: 150px;
+}
+.product_photo2{
+  float: left;
+  padding-right: 100px;
+}
+.product_text2{
+  font-size: 19px;
+  line-height: 36px;
+  padding-top: 150px;
+}
+.info_text2{
+  padding-top: 60px;
+}
+.product_3{
+  height: 561px;
+}
+.product_text3{
+  float: left;
+  text-align: right;
+  padding-top: 150px;
+  font-size: 19px;
+  margin-left: 80px;
+  line-height: 36px;
+}
+.info_text3{
+  padding-top: 60px;
+}
+.material{
+  padding-top: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #807dcd;
+}
+.product_photo3{
+  float: left;
+  padding-left: 100px;
+}
+#product_information{
+  height: 700px;
+  width: 1320px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pi_title{
+  font-size: 40px;
+  font-family: 'GongGothicBold';
+  color: #5c58ce;
+  padding-bottom: 100px;
+}
+.pi_text{
+  color: #757575;
+  line-height: 24px;
+  font-family: 'GongGothicLight';
+}
+
+
+
+
+#footer{
+  width: 1320px;
+  margin: 0 auto;
+	height: 200px;
+	color: white;
+	font-size: 12px;
+	position: relative;
+	margin-top: 150px;
+}
+.footer_logo{
+	float: left;
+	padding-right: 40px;
+	padding-top: 10px;
+}
+#footer_text li{
+	float: left;
+	padding-right: 60px;
+}
+#footer_text li a{
+	color: white;
+}
+#footer_text li a:hover{
+	font-weight: bold;
+}
+.footer_text2{
+	padding-top: 5px;
+}
+#sns{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#sns li{
+	float: left;
+	padding-right: 20px;
+}
+#sns li:hover{
+	opacity: 0.5;
+}

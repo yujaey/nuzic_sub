@@ -1,0 +1,309 @@
+*{margin:0;padding:0;}/*여백초기화*/
+a{text-decoration: none; color: #000;}/*밑줄,글자색바꾸기*/
+ul{list-style: none;}/*블릿없애기*/
+@font-face {
+	font-family: 'GongGothicLight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicBold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: 'GongGothicMedium';
+	font-size:14px;
+	color:rgb(31, 31, 31);
+	line-height:28px;
+	min-width: 1320px;
+}
+#background{
+	height: 4570px;
+	background: #ebdbd1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ebdbd1 0%, #9dc8df 35%, #a2c3e9 65%, #9e97cb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebdbd1', endColorstr='#9e97cb',GradientType=0 ); /* IE6-9 */
+}
+#header{
+	margin: 0 auto;
+	width: 1320px;
+	height: 120px;
+	position: relative;
+}
+#util{
+	padding-top: 15px;
+	float: right;
+	font-family: 'GongGothicLight';
+}
+#util li{
+	font-size: 12px;
+	float: left;
+}
+#util li a{
+	color: #9e97cb;
+}
+#util li:nth-child(1){
+	padding-right: 40px;
+}
+h1{
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+#gnb{
+	position: absolute;
+	top: 80px;
+	left: 95px;
+	width: 1170px;
+	text-align: center;
+}
+#gnb li{
+	display: block;
+ 	float: left;
+	font-family: 'GongGothicBold';
+	width: 225px;
+}
+#gnb li:nth-child(3){
+	padding-left: 45px;
+}
+#gnb li a{
+	font-size: 14px;
+	color: rgb(82, 80, 80);
+	padding-bottom: 20px;
+}
+#gnb li a:hover{
+	color: #4522e0;
+}
+#banner{
+  width: 1320px;
+  height: 600px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+#contents{
+  width: 1320px;
+  height: 3350px;
+  margin: 0 auto;
+}
+#horang{
+  height: 600px;
+  position: relative;
+  margin-bottom: 150px;
+}
+.horang_text{
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+.horang_text .title{
+  color: #071d4a;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.horang_text .name{
+  color: #5940c9;
+  font-size: 48px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.horang_text .info{
+  color: white;
+  letter-spacing :0.7px;
+  font-size: 18px;
+  font-family: 'GongGothicLight';
+}
+.horang_photo{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.listen_button{
+  position: absolute;
+  top: 500px;
+  right: 570px;
+}
+#goyo{
+  height: 600px;
+  position: relative;
+  margin-bottom: 150px;
+}
+.goyo_text{
+  position: absolute;
+  top: 150px;
+  right: 0;
+  text-align: right;
+}
+.goyo_text .title{
+  color: #071d4a;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.goyo_text .name{
+  color: #5940c9;
+  font-size: 48px;
+  padding-bottom: 30px;
+}
+.goyo_text .info{
+  color: white;
+  letter-spacing :0.7px;
+  font-size: 18px;
+  font-family: 'GongGothicLight';
+}
+.goyo_photo{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.listen_button{
+  position: absolute;
+  top: 520px;
+  right: 600px;
+}
+.title{
+  letter-spacing: 0.5px;
+  font-family: 'GongGothicBold';
+}
+.name{
+  letter-spacing: 0.3px;
+  font-family: 'GongGothicBold';
+}
+#newartists{
+  height: 700px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.pinktitle{
+  font-family: 'GongGothicBold';
+  font-size: 48px;
+  color: #d903b3;
+  padding-top: 40px;
+}
+#artists{
+  display: inline-block;
+  padding-top: 50px;
+}
+#artists li{
+  float: left;
+  width: 400px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	width: 400px;
+	height: 500px;
+	color: #fff;
+	padding-top: 60px;
+	box-sizing: border-box;
+  transform: translateY(501px);
+  line-height: 30px;
+  font-family: 'GongGothicLight';
+  letter-spacing: 1px;
+}
+ul li:hover .text{
+  transform: translateY(0px);
+  transition: transform 1s;
+}
+#bananajam{
+  height: 550px;
+  position: relative;
+  margin-bottom: 150px;
+}
+.bananajam_text{
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+.bananajam_text .title{
+  color: #071d4a;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.bananajam_text .name{
+  color: #5940c9;
+  font-size: 48px;
+  padding-bottom: 30px;
+  line-height: 55px;
+}
+.bananajam_photo{
+  position: absolute;
+  top: 110px;
+  left: 400px;
+}
+#bananajam .info{
+  position: absolute;
+  top: 130px;
+  right: 0;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  font-family: 'GongGothicLight';
+}
+#bananajam .listen_button_{
+  position: absolute;
+  top: 360px;
+  right: 120px;
+}
+#ad_banner{
+  height: 300px;
+}
+
+
+
+
+
+#footer{
+  width: 1320px;
+  margin: 0 auto;
+	height: 200px;
+	color: white;
+	font-size: 12px;
+	position: relative;
+	margin-top: 150px;
+}
+.footer_logo{
+	float: left;
+	padding-right: 40px;
+	padding-top: 10px;
+}
+#footer_text li{
+	float: left;
+	padding-right: 60px;
+}
+#footer_text li a{
+	color: white;
+}
+#footer_text li a:hover{
+	font-weight: bold;
+}
+.footer_text2{
+	padding-top: 5px;
+}
+#sns{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#sns li{
+	float: left;
+	padding-right: 20px;
+}
+#sns li:hover{
+	opacity: 0.5;
+}

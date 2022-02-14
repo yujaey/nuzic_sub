@@ -1,0 +1,202 @@
+*{margin:0;padding:0;}/*여백초기화*/
+a{text-decoration: none; color: #000;}/*밑줄,글자색바꾸기*/
+ul{list-style: none;}/*블릿없애기*/
+@font-face {
+	font-family: 'GongGothicLight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicBold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GongGothicMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: 'GongGothicMedium';
+	font-size:14px;
+	color:rgb(31, 31, 31);
+	line-height:28px;
+	min-width: 1320px;
+}
+#background{
+	height: 4620px;
+	background: #ebdbd1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ebdbd1 0%, #9dc8df 35%, #a2c3e9 65%, #9e97cb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebdbd1', endColorstr='#9e97cb',GradientType=0 ); /* IE6-9 */
+}
+#header{
+	margin: 0 auto;
+	width: 1320px;
+	height: 120px;
+	position: relative;
+}
+#util{
+	padding-top: 15px;
+	float: right;
+	font-family: 'GongGothicLight';
+}
+#util li{
+	font-size: 12px;
+	float: left;
+}
+#util li a{
+	color: #9e97cb;
+}
+#util li:nth-child(1){
+	padding-right: 40px;
+}
+h1{
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+#gnb{
+	position: absolute;
+	top: 80px;
+	left: 95px;
+	width: 1170px;
+	text-align: center;
+}
+#gnb li{
+	display: block;
+ 	float: left;
+	font-family: 'GongGothicBold';
+	width: 225px;
+}
+#gnb li:nth-child(3){
+	padding-left: 45px;
+}
+#gnb li a{
+	font-size: 14px;
+	color: rgb(82, 80, 80);
+	padding-bottom: 20px;
+}
+#gnb li a:hover{
+	color: #4522e0;
+}
+#banner{
+	width: 1320px;
+	height: 600px;
+	margin: 0 auto;
+}
+#contents{
+	width: 1320px;
+	margin: 0 auto;
+	text-align: center;
+	color: rgb(58, 58, 58);
+	padding-top: 150px;
+}
+.iphonecase{
+	height: 600px;
+	padding-bottom: 150px;
+}
+.title{
+	font-size: 46px;
+	font-family: 'GongGothicBold';
+	padding-bottom: 50px;
+}
+#pcase{
+	width: 100%;
+}
+#pcase li{
+	float: left;
+	width: 440px;
+	font-size: 18px;
+}
+#pcase li a:hover{
+	opacity: 0.5;
+}
+span{
+	color: rgb(121, 121, 121);
+	font-family: 'GongGothicLight';
+}
+.airpodscase{
+	height: 600px;
+	padding-bottom: 150px;
+	position: relative;
+}
+#apcase{
+	width: 100%;
+	position: absolute;
+	top: 80px;
+	left: 165px;
+}
+#apcase li{
+	float: left;
+	width: 500px;
+	font-size: 18px;
+}
+#apcase li a:hover{
+	opacity: 0.5;
+}
+.popsocketbox{
+	padding-bottom: 150px;
+}
+#popsocket li{
+	font-size: 18px;
+}
+#popsocket li a:hover{
+	opacity: 0.5;
+}
+#speaker li{
+	font-size: 18px;
+}
+#speaker li a:hover{
+	opacity: 0.5;
+}
+.bottom_banner{
+	padding-top: 150px;
+}
+
+
+
+
+#footer{
+  width: 1320px;
+  margin: 0 auto;
+	height: 200px;
+	color: white;
+	font-size: 12px;
+	position: relative;
+	margin-top: 150px;
+}
+.footer_logo{
+	float: left;
+	padding-right: 40px;
+	padding-top: 10px;
+}
+#footer_text li{
+	float: left;
+	padding-right: 60px;
+}
+#footer_text li a{
+	color: white;
+}
+#footer_text li a:hover{
+	font-weight: bold;
+}
+.footer_text2{
+	padding-top: 5px;
+}
+#sns{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#sns li{
+	float: left;
+	padding-right: 20px;
+}
+#sns li:hover{
+	opacity: 0.5;
+}
