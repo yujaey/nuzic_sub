@@ -28,7 +28,7 @@ body{
 
 }
 #background{
-	height: 2620px;
+	height: 2570px;
 	background: #ebdbd1; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ebdbd1 0%, #9dc8df 35%, #a2c3e9 65%, #9e97cb 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  #ebdbd1 0%,#9dc8df 35%,#a2c3e9 65%,#9e97cb 100%); /* Chrome10-25,Safari5.1-6 */
